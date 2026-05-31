@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      property="og:title"
+      content="Navro'zbek va Ra'nohon | To'y taklifnomasi"
+    />
+
+    <meta
+      property="og:image"
+      content="https://wedding-day-wheat.vercel.app/assets/foto.png"
+    />
+
+    <meta
+      property="og:image:secure_url"
+      content="https://wedding-day-wheat.vercel.app/assets/foto.png"
+    />
+
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="description"
+      content="Navro'zbek va Ra'nohonning 2026-yil 4-iyun kungi to'y taklifnomasi."
+    />
+    <title>Navro'zbek va Ra'nohon | To'y taklifnomasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Corinthia:wght@400;700&family=Great+Vibes&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <nav
+      class="language-switcher"
+      data-i18n-attr="aria-label:languageSwitcher"
+      aria-label="Til tanlash"
+    >
+      <button
+        class="language-option"
+        type="button"
+        data-language="ru"
+        data-i18n-attr="aria-label:languageRuLabel;title:languageRuLabel"
+        aria-label="Ruscha"
+        aria-pressed="false"
+      >
+        RU
+      </button>
+      <button
+        class="language-option is-active"
+        type="button"
+        data-language="uz"
+        data-i18n-attr="aria-label:languageUzLabel;title:languageUzLabel"
+        aria-label="O'zbekcha"
+        aria-pressed="true"
+      >
+        UZ
+      </button>
+    </nav>
+    <button
+      class="music-toggle"
+      id="musicToggleBtn"
+      type="button"
+      aria-label="Musiqani yoqish"
+      aria-pressed="false"
+      title="Musiqani yoqish"
+    >
+      <img
+        class="music-icon-image"
+        src="assets/pink musicIcon.png"
+        alt=""
+        aria-hidden="true"
+      />
+    </button>
+
+    <section
+      class="intro"
+      id="intro"
+      aria-label="Taklifnoma konverti"
+      data-i18n-attr="aria-label:ariaIntro"
+    >
+      <div
+        class="envelope-stage"
+        role="img"
+        aria-label="Muhrlangan qog'oz konvert"
+        data-i18n-attr="aria-label:ariaEnvelope"
+      >
+        <div class="flap flap-top flag-top-taklifnoma">
+          <p class="flap-note" data-i18n-html="envelopeTopNote">
+            <span class="flap-note-top">SIZ</span
+            ><span class="flap-note-middle">TO'YIMIZGA</span
+            ><span class="flap-note-script">taklif etilgansiz</span>
+          </p>
+        </div>
+        <div class="flap flap-left"></div>
+        <div class="flap flap-right"></div>
+        <div class="flap flap-bottom">
+          <p class="flap-signature">
+            <span data-i18n="withLove">muhabbat ila,</span><br />
+            <strong data-i18n="signatureNames"
+              >Navro'zbek&nbsp;va&nbsp;Ra'nohon</strong
+            >
+          </p>
+        </div>
+
+        <button
+          class="seal-button"
+          id="openInviteBtn"
+          type="button"
+          aria-expanded="false"
+        >
+          <span data-i18n-html="openHere">ochish</span>
+        </button>
+      </div>
+    </section>
+
+    <main class="invitation" id="invitation" aria-hidden="true">
+      <section class="letter-hero reveal">
+        <article
+          class="ornament-hero"
+          role="img"
+          aria-label="Yoshlar ismi va to'y sanasi yozilgan bezak"
+          data-i18n-attr="aria-label:ariaOrnamentHero"
+        >
+          <div class="ornament-content">
+            <p class="ornament-names" data-i18n-html="ornamentNames">
+              <span class="ornament-name-line">Navro'zbek</span
+              ><span class="ornament-name-amp">va</span
+              ><span class="ornament-name-line">Ra'nohon</span>
+            </p>
+            <p class="ornament-message" data-i18n-html="ornamentMessage">
+              Quvonchli yangilik:<br />biz turmush<br />quramiz!
+            </p>
+
+            <div class="ornament-date" aria-hidden="true">
+              <span data-i18n="ornamentDay">04</span>
+              <i></i>
+              <span data-i18n="ornamentMonth">06</span>
+              <i></i>
+              <span data-i18n="ornamentYear">26</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="scroll-indicator__text" data-i18n="scrollHint"
+            >Pastga suring</span
+          >
+          <span class="scroll-indicator__arrow">↓</span>
+        </div>
+      </section>
+
+      <section class="letter-card reveal">
+        <h1 class="hero-title" data-i18n-html="heroNames">
+          Aziz&nbsp;va&nbsp;qadrdon<br /><span class="no-break"
+            >insonimiz!</span
+          >
+        </h1>
+
+        <p class="lead" data-i18n-html="lead">
+          Hayotimizdagi eng baxtli kunlardan biri - nikoh to'yimizni siz bilan
+          birga nishonlashni niyat qildik.<br /><br />Sizni ushbu kechamizga
+          samimiy taklif etamiz.<br /><br /><strong
+            >Quvonchli kunimizda aziz mehmonimiz bo'lishingizni intizorlik bilan
+            kutamiz.</strong
+          >
+        </p>
+      </section>
+
+      <section
+        class="calendar-section reveal"
+        aria-label="To'y sanasi"
+        data-i18n-attr="aria-label:ariaWeddingDate"
+      >
+        <div
+          class="calendar"
+          role="img"
+          aria-label="2026-yil iyun kalendari, 4-iyun belgilangan"
+          data-i18n-attr="aria-label:ariaCalendar"
+        >
+          <div class="calendar-head">
+            <span data-i18n="calendarMonth">Iyun, 2026</span>
+          </div>
+
+          <div class="calendar-grid week-days">
+            <span data-i18n="weekdayMon">DU</span>
+            <span data-i18n="weekdayTue">SE</span>
+            <span data-i18n="weekdayWed">CHOR</span>
+            <span data-i18n="weekdayThu">PAY</span>
+            <span data-i18n="weekdayFri">JUM</span>
+            <span data-i18n="weekdaySat">SHAN</span>
+            <span data-i18n="weekdaySun">YAK</span>
+          </div>
+
+          <div class="calendar-grid days">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <div
+              class="heart-cell"
+              aria-label="To'y kuni"
+              data-i18n-attr="aria-label:ariaWeddingDay"
+            >
+              <span class="heart-day">4</span>
+            </div>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="location-section reveal"
+        aria-label="To'y manzili"
+        data-i18n-attr="aria-label:ariaVenueDetails"
+      >
+        <h2 class="location-title" data-i18n="locationTitle">To'y manzili</h2>
+        <p class="venue-name" data-i18n="venueName">Gulsanam restorani</p>
+        <p class="venue-address" data-i18n="venueAddress">Buvayda tumani</p>
+        <p class="venue-address" data-i18n="venueLandmark">
+          Mo'ljal: Buvayda tumani Gulsanam to'yxonasi
+        </p>
+        <div class="map-links">
+          <a
+            class="map-link"
+            href="https://yandex.uz/maps/?pt=71.079063,40.634511&z=16&l=map"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="mapLinkYandex">Yandex xaritasi</span>
+          </a>
+          <a
+            class="map-link"
+            href="https://www.google.com/maps?q=40.634511,71.079063"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="mapLinkGoogle">Google Maps</span>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="countdown-section reveal"
+        aria-label="Обратный отсчет"
+        data-i18n-attr="aria-label:ariaCountdown"
+      >
+        <h2 data-i18n="countdownTitle">Считаем каждое мгновение</h2>
+
+        <div class="countdown" role="timer" aria-live="polite">
+          <div class="time-unit">
+            <span id="days">0</span>
+            <small data-i18n="unitDays">Дней</small>
+          </div>
+          <div class="time-unit">
+            <span id="hours">0</span>
+            <small data-i18n="unitHours">Часов</small>
+          </div>
+          <div class="time-unit">
+            <span id="minutes">0</span>
+            <small data-i18n="unitMinutes">Минут</small>
+          </div>
+          <div class="time-unit">
+            <span id="seconds">0</span>
+            <small data-i18n="unitSeconds">Секунд</small>
+          </div>
+        </div>
+
+        <p
+          class="countdown-message"
+          id="countdownMessage"
+          data-i18n="countdownWaiting"
+        >
+          Мы ждем вас.
+        </p>
+      </section>
+    </main>
+
+    <audio
+      id="backgroundMusic"
+      src="assets/elvis music.mp3"
+      preload="auto"
+      loop
+    ></audio>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
